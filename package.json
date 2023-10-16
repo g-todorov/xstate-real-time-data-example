@@ -1,0 +1,28 @@
+{
+  "name": "xstate-real-time-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "xstate typegen \"./app/**/*.ts?(x)\""
+  },
+  "dependencies": {
+    "@xstate/react": "^3.2.2",
+    "firebase": "^10.4.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "xstate": "^4.38.2"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@xstate/cli": "^0.5.2",
+    "encoding": "^0.1.13",
+    "typescript": "latest"
+  }
+}
