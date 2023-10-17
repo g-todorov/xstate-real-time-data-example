@@ -128,7 +128,7 @@ const appMachine = createMachine(
             (querySnapshot) => {
               const messages: Message[] = [];
               querySnapshot.forEach((doc) => {
-                messages.push(doc.data().name);
+                messages.push(doc.data() as Message);
               });
 
               sendBack({ type: "SET_MESSAGES", messages });
